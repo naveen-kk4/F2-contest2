@@ -1,0 +1,50 @@
+*{
+    
+    background-color: black;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    
+}
+h1{
+    margin:40px 20px;
+    font-weight: 100;
+}
+form{
+    margin:40px 20px;
+}
+form  input{
+      height:60px;
+      width:380px;
+      margin: 10px;
+      padding-inline:40px;
+      font-size: medium;
+}
+form button{
+    background-color: white;
+    width: 550px;
+    height: 60px;
+    text-align: center;
+    color: black;
+    font-size: medium;
+    cursor: pointer;
+    margin:20px;
+}
+#search-bar{
+    padding:22px;
+    width:90vw;
+    margin:40px;
+    font-size: medium;
+}
+#table{
+    margin: 10px;
+    width:90vw;
+   
+    border-collapse: collapse;
+}
+
+
+tr,td,th,tbody {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
