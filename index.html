@@ -11,15 +11,16 @@
 </head>
 <body>
     <h1>Student Management CRUD</h1>
-    <form action="">
+    <form id="student-form" onsubmit="handleStudents(event)">
         <input type="text" required placeholder="Name" id="inp-1">
         <input type="email" required placeholder="Email" id="inp-2">
         <input type="text" required placeholder="GPA" id="inp-3">
-        <input type="text" required placeholder="Age" id="inp-4">
+        <input type="number" required placeholder="Age" id="inp-4">
         <input type="text" required placeholder="Degree" id="inp-5">
-        <button  class="add-st">Add Student</button>
+        <input type="hidden" id="inp-6">
+        <button type="submit" id="form-submit">Add Student</button>
     </form>
-    <input type="text" id="search-bar" placeholder="Search by Name,Email or Degree">
+    <input type="text" id="search-bar" onkeyup="searchStudents()" placeholder="Search by Name,Email or Degree">
     <table id="table">
         <thead>
           <th>ID</th>
@@ -27,9 +28,9 @@
           <th>Email</th>
           <th>Age</th>
           <th>GPA</th>
-          <th>Degree</th>
+          <th colspan="2">Degree</th>
         </thead>
-        <tbody>
+        <tbody id="all-students">
            
         </tbody>
       </table>
